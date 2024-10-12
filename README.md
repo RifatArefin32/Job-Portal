@@ -28,8 +28,8 @@
 - jobseeker_id
 - title
 - org_name
-- starting__year
-- passing_year
+- start
+- end
 
 ### Employer
 - user_id
