@@ -15,8 +15,8 @@
 - jobseeker_id
 - title
 - institute
-- starting_year
-- passing_year
+- start_year
+- pass_year
 - result
 
 ### Skills 

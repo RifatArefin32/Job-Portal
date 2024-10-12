@@ -20,7 +20,7 @@ class JobSeekerFactory extends Factory
         return [
             'user_id' => User::factory(),
             'notice_period' => 2,
-            'year_of_exp' => fake()->random_int(0, 10)
+            'year_of_exp' => fake()->randomNumber()
         ];
     }
 }

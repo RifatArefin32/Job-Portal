@@ -18,4 +18,8 @@ class JobSeeker extends Model
     public function user() {
         $this->belongsTo(User::class);
     }
+
+    public function educations() {
+        $this->hasMany(Education::class);
+    }
 }
