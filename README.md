@@ -9,7 +9,7 @@
 ### Job Seeker
 - user_id (fk)
 - notice_period
-- year_of_experience
+- year_of_exp
 
 ### Education
 - jobseeker_id
