@@ -18,8 +18,13 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        
+        // Create a JobSeeker Profile
         \App\Models\Education::factory()->create();
         \App\Models\Experience::factory()->create();
         \App\Models\Skill::factory()->create();
+
+        // Create an Employer Profile
+        \App\Models\Employer::factory()->create();
     }
 }
