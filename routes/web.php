@@ -29,9 +29,9 @@ Route::get('/jobs', function() {
     return view('jobs');
 });
 
-// Route::get('/test', function() {
-//     $users = App\Models\JobSeeker::all();
-//     foreach($users as $user) {
-//         dd($user->educations);
-//     }
-// });
+Route::get('/test', function() {
+    $users = App\Models\JobSeeker::all();
+    foreach($users as $user) {
+        dd($user->skills);
+    }
+});

@@ -22,4 +22,8 @@ class JobSeeker extends Model
     public function educations() {
         return $this->hasMany(Education::class);
     }
+
+    public function skills() {
+        return $this->hasMany(Skill::class);
+    }
 }
