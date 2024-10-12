@@ -4,6 +4,7 @@
 - phone
 - address
 - password
+- admin
 
 ### Job Seeker
 - user_id (fk)
