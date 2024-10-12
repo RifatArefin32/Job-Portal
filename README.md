@@ -9,14 +9,14 @@
 ### Job Seeker
 - user_id (fk)
 - notice_period
-- year_of_experience
+- year_of_exp
 
 ### Education
 - jobseeker_id
 - title
 - institute
-- starting_year
-- passing_year
+- start_year
+- pass_year
 - result
 
 ### Skills 
@@ -28,8 +28,8 @@
 - jobseeker_id
 - title
 - org_name
-- starting__year
-- passing_year
+- start
+- end
 
 ### Employer
 - user_id
