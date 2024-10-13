@@ -29,5 +29,8 @@ class DatabaseSeeder extends Seeder
 
         // Create a Job Post
         \App\Models\Job::factory()->create();
+
+        // Create a Job Application
+        \App\Models\JobApplication::factory()->create();
     }
 }

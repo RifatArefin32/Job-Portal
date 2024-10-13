@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('benefits');
             $table->string('job_type');
             $table->string('location');
+            $table->date('deadline');
             $table->timestamps();
         });
     }

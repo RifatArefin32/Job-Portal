@@ -20,10 +20,15 @@ class Job extends Model
             'currency',
             'benefits',
             'job_type',
-            'location'
+            'location',
+            'deadline'
     ];
 
     public function employer() {
         return $this->belongsTo(Employer::class);
+    }
+
+    public function jobApplications() {
+        return $this->hasMany(JobApplication::class);
     }
 }
