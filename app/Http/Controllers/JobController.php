@@ -10,13 +10,10 @@ class JobController extends Controller
     public function index() {
         try {
             $jobs = Job::all();
-            $data = [
-                'jobs' => $jobs
-            ];
-            return view('jobs.index', $data);
+            return view('jobs.index', ['jobs' => $jobs]);
 
         } catch(\Exception $e) {
-            abort(404);
+            abort(500, 'Something went wrong');
         }
     }
 
@@ -27,11 +24,11 @@ class JobController extends Controller
                 return view('jobs.show', ['job' => $job]);
             }
             else {
-                abort(404);
+                abort(404, 'Not found');
             }
 
         }catch(\Exception $e) {
-            abort(404);
+            abort(500, 'Something went wrong');
         }
     }
 }
