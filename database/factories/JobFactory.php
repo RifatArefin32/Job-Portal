@@ -29,6 +29,7 @@ class JobFactory extends Factory
             'benefits' => fake()->text(),
             'job_type' => 'on-site',
             'location' => fake()->address(),
+            'deadline' => fake()->date()
         ];
     }
 }

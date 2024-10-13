@@ -20,7 +20,8 @@ class Job extends Model
             'currency',
             'benefits',
             'job_type',
-            'location'
+            'location',
+            'deadline'
     ];
 
     public function employer() {
