@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Job;
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\EmployerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,8 @@ Route::get('/contact', function () {return view('contact');});
 Route::get('/jobs', [JobController::class, 'index']);
 Route::get('/jobs/{id}', [JobController::class, 'show']);
 
-// // Employer Model
-// Route::get('/employers', [])
+// Employer Model
+Route::get('/employers', [EmployerController::class, 'index']);
+Route::get('/employers/{id}', [EmployerController::class, 'show']);
+
+// Route::get('/employers/{id}', function () {return view('employers.show');});
