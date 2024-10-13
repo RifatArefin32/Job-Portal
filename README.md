@@ -42,13 +42,13 @@
 - org_url
 
 ### Job
-- employer_id
-- title
-- description
-- responsibilities
-- requirements
-- min_salary
-- max_salary
-- benefits
-- job_type
-- location
+employer_id
+title
+description
+responsibilities
+requirements
+min_salary
+max_salary
+benefits
+job_type
+location
