@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(JobSeeker::class);
+            $table->foreignIdFor(JobSeeker::class)->constrained()->cascadeOnDelete();
             $table->string('title');
             $table->text('description');
             $table->string('org_name');

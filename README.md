@@ -41,3 +41,15 @@
 - org_address3
 - org_url
 
+### Job
+employer_id
+title
+description
+responsibilities
+requirements
+min_salary
+max_salary
+currency
+benefits
+job_type
+location

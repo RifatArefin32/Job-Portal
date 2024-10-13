@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('education', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(JobSeeker::class);
+            $table->foreignIdFor(JobSeeker::class)->constrained()->cascadeOnDelete();
             $table->string('title');
             $table->string('institute');
             $table->string('start_year');
