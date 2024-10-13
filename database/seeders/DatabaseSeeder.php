@@ -26,5 +26,8 @@ class DatabaseSeeder extends Seeder
 
         // Create an Employer Profile
         \App\Models\Employer::factory()->create();
+
+        // Create a Job Post
+        \App\Models\Job::factory()->create();
     }
 }
