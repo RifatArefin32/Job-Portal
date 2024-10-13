@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('job_seekers', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class);
+            $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
             $table->integer('notice_period');
             $table->integer('year_of_exp');
             $table->timestamps();

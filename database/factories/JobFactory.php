@@ -25,6 +25,7 @@ class JobFactory extends Factory
             'requirements' => fake()->text(),
             'min_salary' => fake()->numberBetween(10000, 40000),
             'max_salary' => fake()->numberBetween(50000, 100000),
+            'currency' => fake()->currencyCode(),
             'benefits' => fake()->text(),
             'job_type' => 'on-site',
             'location' => fake()->address(),

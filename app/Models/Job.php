@@ -17,6 +17,7 @@ class Job extends Model
             'requirements',
             'min_salary',
             'max_salary',
+            'currency',
             'benefits',
             'job_type',
             'location'
