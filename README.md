@@ -53,3 +53,7 @@ currency
 benefits
 job_type
 location
+deadline
+
+### Job Application
+'job_id', 'job_seeker_id', 
