@@ -30,4 +30,8 @@ class JobSeeker extends Model
     public function experiences() {
         return $this->hasMany(Experience::class);
     }
+
+    public function jobApplication() {
+        return $this->hasOne(JobApplication::class);
+    }
 }
