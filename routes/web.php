@@ -15,24 +15,13 @@ use App\Http\Controllers\JobController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', function () {return view('home');});
+Route::get('/about', function () {return view('about');});
+Route::get('/contact', function () {return view('contact');});
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
+// Job Model
 Route::get('/jobs', [JobController::class, 'index']);
 Route::get('/jobs/{id}', [JobController::class, 'show']);
 
-// Route::get('/test', function() {
-//     $users = App\Models\JobSeeker::all();
-//     foreach($users as $user) {
-//         dd($user->skills);
-//     }
-// });
+// // Employer Model
+// Route::get('/employers', [])

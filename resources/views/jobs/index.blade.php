@@ -8,12 +8,12 @@
             @php
                 //dd($job->employer);
             @endphp
-                <div class="p-4 bg-gray-100 rounded shadow-xl m-4">
+                <div class="p-4 bg-gray-100 rounded m-4">
+
                     <strong> {{ $job->title }} </strong> | 
-                    <a href="#" class="text-blue-500"> {{$job->employer->org_name}} </a>  | 
-                    <a href="#" class="text-blue-500"> see details </a>
-                        
-                    </div>
+                    <a href="#" class="text-blue-500"> {{$job->employer->org_name}} </a> |
+                    <a href="/jobs/{{ $job->id }}" class="text-blue-900"> <strong> See details </strong> </a>
+            
                 </div>
             @endforeach
         </div>
