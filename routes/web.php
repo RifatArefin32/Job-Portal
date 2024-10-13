@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Job;
+use App\Http\Controllers\JobController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,13 +27,12 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/jobs', function() {
-    return view('jobs');
-});
+Route::get('/jobs', [JobController::class, 'index']);
+Route::get('/jobs/{id}', [JobController::class, 'show']);
 
-Route::get('/test', function() {
-    $users = App\Models\JobSeeker::all();
-    foreach($users as $user) {
-        dd($user->skills);
-    }
-});
+// Route::get('/test', function() {
+//     $users = App\Models\JobSeeker::all();
+//     foreach($users as $user) {
+//         dd($user->skills);
+//     }
+// });
