@@ -3,7 +3,7 @@
     <x-header></x-header>
     {{-- <x-page-name>Home Page</x-page-name> --}}
     <x-page-content>
-        <div class="bg-white">
+        <div class="bg-white min-h-200">
             <div class="relative isolate px-6 pt-14 lg:px-8">
                 <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-20">
                     <div class="hidden sm:mb-8 sm:flex sm:justify-center">
