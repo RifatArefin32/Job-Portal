@@ -56,7 +56,7 @@
                     <form class="flex mt-4">
                         <input type="email"
                             class="w-full px-4 py-2 text-gray-700 bg-white rounded-l-lg focus:outline-none"
-                            placeholder="Enter your email (currently unable)">
+                            placeholder="Enter your email">
                         <button class="px-4 py-2 bg-gray-500 rounded-r-lg hover:bg-blue-900">
                             Subscribe
                         </button>
